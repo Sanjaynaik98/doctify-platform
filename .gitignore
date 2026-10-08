@@ -1,0 +1,29 @@
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Java
+*.class
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+.env.*
+application-local.yml
+application-local.yaml
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+
+# OS
+.DS_Store
+Thumbs.db
