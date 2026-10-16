@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: identity-service-test
+  datasource:
+    url: jdbc:h2:mem:identity_test;DB_CLOSE_DELAY=-1;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+  cloud:
+    config:
+      enabled: false
+
+eureka:
+  client:
+    enabled: false
+    register-with-eureka: false
+    fetch-registry: false
+
+jwt:
+  secret: DoctifyPlatformSecureSecretKeyForJwtTokenGeneration2026!Healthcare
+  expiration-ms: 3600000

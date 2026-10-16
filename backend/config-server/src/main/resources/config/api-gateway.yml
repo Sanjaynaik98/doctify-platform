@@ -4,7 +4,11 @@ server:
 spring:
   cloud:
     gateway:
-      routes: []
+      routes:
+        - id: identity-service
+          uri: lb://identity-service
+          predicates:
+            - Path=/api/auth/**
 
 eureka:
   client:
